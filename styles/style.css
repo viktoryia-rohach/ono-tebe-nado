@@ -132,12 +132,14 @@
 .aligned-text_center {
     position: absolute;
     padding: 127px 0 306px 286px;
+        /* это надо заменить и выровнять по-другому */
     text-align: center;
 }
 
 .aligned-text_right {
     position: absolute;
     padding: 247px 0px 186px 580px;
+    /* это надо заменить и выровнять по-другому */
     text-align: right;
 }
 
