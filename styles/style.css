@@ -7,6 +7,11 @@
     padding: 92px 24px;
 }
 
+.header__menu {
+    flex: 1;
+    white-space: nowrap;
+}
+
 .header__links-list {
     display: flex;
     flex-direction: row;
@@ -46,19 +51,21 @@
 }
 
 .header__logo {
-    display: block;
-    justify-self: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 148px;
     height: 105px;
-    flex-shrink: 0;
+    flex: 1;
     transition: transform 0.3s ease;
+}
+   
+.right-aligned {
+    margin-left: auto;
 }
 
 .header__logo-image {
     max-height: 100%;
-    /* display: block;
-    width: 148px;
-    height: 105px; */
 }
 
 .address {
