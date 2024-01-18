@@ -2,19 +2,18 @@
 
 .header {
     display: flex;
-    align-items: start;
+    align-items: center; 
     padding: 92px 24px;
 }
 
 .header__menu {
-    flex: 1;
     white-space: nowrap;
 }
 
 .header__links-list {
     display: flex;
     flex-direction: row;
-    gap: 26px;
+    gap: 33px;
     list-style: circle;
     padding: 44px 34px 40px 26px;
 }
@@ -25,17 +24,6 @@
 
 .header__link {
     text-underline-offset: 5px;
-    transition: text-underline-offset 0.3s ease;
-}
-
-.header__links-list-item_no-bullit {
-    color: #000000;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    list-style: none;
 }
 
 .header__links-list-item {
@@ -43,19 +31,19 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0em;
     text-align: left;
-    letter-spacing: 1%;
-    gap: 31.48px;
+}
+
+.header__links-list-item_no-bullit {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    list-style: none;
 }
 
 .header__logo {
     width: 148px;
     height: 105px;
-}
-
-.right-aligned {
-    margin-left: auto;
 }
 
 .header__logo-image {
@@ -75,19 +63,14 @@
     font-weight: 400;
     line-height: 24.3px;
     letter-spacing: 0.18px;
-    margin-right: 26px;
+    margin-right: 28.5px;
+    margin-top: 5px;
     width: 240px;
-}
-
-.no-wrap {
-    white-space: nowrap;
 }
 
 .header__address-item {
     text-underline-offset: 5px;
-    transition: text-underline-offset 0.3s ease;
 }
-
 
 .cover {
     min-height: 757px;
@@ -109,7 +92,6 @@
     width: 100%;
     height: 100%;
     inset: 0;
-    z-index: -1;
 }
 
 .cover_title {
@@ -155,10 +137,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-content: flex-end;
     gap: 79px;
     padding: 30px 50px 51px 78px;
-    position: relative;
+    z-index: 1;
 }
 
 .bet-button {
@@ -170,19 +151,7 @@
     text-align: center;
     text-transform: uppercase;
     background: transparent;
-    transition: transform 0.3s ease;
     cursor: pointer;
-}
-
-.bet-button-text {
-    color: #FFF;
-    text-align: center;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 .lots {
@@ -206,7 +175,7 @@
 
 .lots__card-list-item {
     flex: 1;
-    height: 563px;
+    min-height: 563px;
 }
 
 .lots__look-more-link {
@@ -228,7 +197,6 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    transition: transform 0.3s ease;
 }
 
 .card {
@@ -240,12 +208,6 @@
     height: 100%;
     padding: 51px 40px 48px;
     color: #fff;
-}
-
-.card_type_film,
-.card_type_book,
-.card_type_picture {
-    background-color: rgba(0, 0, 0, 0.60);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -272,6 +234,7 @@
     line-height: 120%;
     text-decoration-line: underline;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .card_text {
@@ -281,6 +244,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    z-index: 1;
 }
 
 .about {
@@ -371,6 +335,11 @@
 
 .footer__social-link:hover {
     transform: translateY(-3px);
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
 
 .footer__social-list {
