@@ -2,8 +2,8 @@
 
 .header {
     display: flex;
-    align-items: center; 
-    padding: 92px 24px;
+    align-items: center;
+    padding: 92px 24px 96px;
 }
 
 .header__menu {
@@ -99,18 +99,26 @@
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
-    line-height: 115%;
     text-transform: uppercase;
     padding: 165px 50px 135px 50px;
     position: relative;
 }
 
+.cover_title__first {
+    line-height: 115%;
+    margin-top: 0;
+}
+
 .cover_title__second {
     margin-left: 286px;
+    margin-top: 20px;
+    line-height: 100%;
 }
 
 .cover_title__third {
     margin-left: 583px;
+    margin-top: 20px;
+    line-height: 100%;
 }
 
 .letter-spacing {
