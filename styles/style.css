@@ -188,26 +188,15 @@
 }
 
 .lots__card-list-item {
-    flex: 1 1 calc(33.33% - 24px);
-    /* не сходится с макетом, нужно другое решение */
-    /* Тут действительно лучше использовать другое решение: 
-    https://skr.sh/sNqAdgVWkmV (подсказка в задании тоже имелась)
-1. Указать gap для карточек по макету 
-2. Указать ширину карточки по макету 
-3. Не фиксировать, а ограничить ширину блока <body> -- это важно! https://skr.sh/sNqNOTrBFE9
-4. использовать свойство рекомендуемое заданием: flex-grow: 1; Как оно работает
-5. Не фиксировать высоту. 
-В результате все будет по макету, но это не самое главное. Важно то, что при уменьшении размера экрана карточки будут "красиво" переноситься и размещаться в контейнере: https://skr.sh/sNqu6E5fmOb */
     min-height: 563px;
+    flex-grow: 1;
+    width: 334px;
 }
 
 .lots__look-more-link {
     margin-left: 40px;
     color: #000;
-    /* При указании семейства шрифтов нужно так же указывать альтернативные начертания из разряда системных. при этом нужно учитывать тип засечек
-https://webformyself.com/ponyatie-formatov-shriftov-i-kak-vyzhat-iz-nix-maksimum-dlya-veb/
-https://www.impressionwebstudio.com/ru/news_articles/font_families.html */
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -255,8 +244,7 @@ https://www.impressionwebstudio.com/ru/news_articles/font_families.html */
 
 .card_title {
     color: #FFF;
-    font-family: Raleway;
-    /* указать альтернативный шрифт */
+    font-family: "Raleway", sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
