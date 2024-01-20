@@ -124,10 +124,6 @@
     margin-left: 50px;
 }
 
-.letter-spacing {
-    letter-spacing: 30px;
-}
-
 .extra-letter-spacing {
     letter-spacing: 60px;
 }
@@ -311,6 +307,10 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
     padding: 90px 50px;
+}
+
+.footer__address {
+    margin-left: 0;
 }
 
 .footer__address-link {
